@@ -1,12 +1,12 @@
 .container{
-    margin-top:8%;
+    margin-top:4%;
     border: 1px solid gray;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 45vh;
-    max-height: 52vh;
+    height: 58vh;
+    max-height: 60vh;
     // display: flex;
     // margin: auto;
     border-radius: 2vh;
@@ -18,14 +18,22 @@
     text-align: center;
     justify-content: center;
 }
-.logo span{
+.logo1{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.logo1 span{
     font-size: 5vh;
     font-weight: 500;
 }
+
 .form-group{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 2vh;
 }
 .form-group input{
     display: flex;
@@ -38,5 +46,5 @@ label{
     font-size: medium;
 }
 button{
-    margin-top: 1.5vh;
+    margin-top: 1vh;
 }

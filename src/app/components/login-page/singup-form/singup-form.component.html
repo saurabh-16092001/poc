@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="signupForm">
+            <div class="logo1">
+                <span>Registration</span>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control " id="name" name="name" formControlName="name">
+            </div>
+            <!-- <span *ngIf="!signupForm.get('userData.name').valid && signupForm.get('userData.name').touched" class="help-block" >Please enter valid user name !!!</span> -->
+            <div class="form-group">
+                <label for="name">E-mail:</label>
+                <input type="email" class="form-control " id="email" name="email" formControlName="email" email>
+            </div>
+            <div class="form-group">
+                <label for="password">Set Password:</label>
+                <input type="password" class="form-control " id="password" name="password" formControlName="password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary logo">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<router-outlet></router-outlet>
