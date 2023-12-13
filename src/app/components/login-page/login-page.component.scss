@@ -1,0 +1,27 @@
+.container{
+    margin-top:10%;
+    border: 1px solid gray;
+    width: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    max-height: 50vh;
+    // display: flex;
+    // margin: auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-group input{
+    display: flex;
+    position: relative;
+    margin: 10px 10px;
+
+}
+label{
+    width: 35vh;
+}
