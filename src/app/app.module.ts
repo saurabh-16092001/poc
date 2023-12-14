@@ -10,13 +10,17 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SingupFormComponent } from './components/login-page/singup-form/singup-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { CustomeInterceptor } from './components/services/interceptors/custome.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     HeaderComponent,
     FooterComponent,
-    SingupFormComponent
+    SingupFormComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +28,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NgbModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide:HTTP_INTERCEPTORS,
+    useClass:CustomeInterceptor,
+    multi:true
+  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

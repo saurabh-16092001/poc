@@ -5,12 +5,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 45vh;
-    max-height: 52vh;
+    height: 52vh;
+    max-height: 54vh;
     // display: flex;
     // margin: auto;
     border-radius: 2vh;
     
+}
+input{
+    background-color:rgb(236, 233, 233);
+    border: 1px solid rgba(0, 0, 0, 0.452);
 }
 .logo{
     display: flex;
@@ -30,8 +34,11 @@
 .form-group input{
     display: flex;
     position: relative;
-    margin: 10px 10px;
-
+    margin: 12px 10px;
+    
+}
+.btn{
+    margin-top: 2vh;
 }
 label{
     width: 35vh;
