@@ -7,7 +7,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 const routes: Routes = [
   {path:"login",component:LoginPageComponent},
   {path:"signup",component:SingupFormComponent},
-  {path:"dashboard",component:DashboardComponent},
+  {path:"dashboard",component:DashboardComponent,title:'Dashboard',
+  // canActivate:{AuthenticationGuard}
+},
   {path:'',redirectTo:'/login',pathMatch:'full'},
 
 ];

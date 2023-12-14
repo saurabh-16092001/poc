@@ -35,7 +35,8 @@ import { CustomeInterceptor } from './components/services/interceptors/custome.i
     provide:HTTP_INTERCEPTORS,
     useClass:CustomeInterceptor,
     multi:true
-  }
+  },
+  HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-            <form>
+            <form (ngSubmit)="onLogin()">
                 <div class="logo">
                     <span>Login</span>
                 </div>
@@ -8,17 +8,17 @@
                 <div class="form-group ">
                     <div class="form-group">
                         <label for="id">Enter e-mail :</label>
-                        <input type="email" class="form-control" id="id" [(ngModel)]="loginObj.email" name="email" email placeholder="E-mail">
+                        <input type="email" class="form-control" id="id" [(ngModel)]="authenticationRequest.email" name="email" email placeholder="E-mail">
                     </div>
                 </div>
                 <div class="form-group ">
                     <div class="form-group">
                         <label for="password">Enter password :</label>
-                        <input type="password" class="form-control" [(ngModel)]="loginObj.password" id="password" name="password" placeholder="Password">
+                        <input type="password" class="form-control" [(ngModel)]="authenticationRequest.password" id="password" name="password" placeholder="Password">
                     </div>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary logo" type="submit"(click)="onLogin()">
+                    <button class="btn btn-primary logo" type="submit">
                         Login
                     </button>
                 </div>
